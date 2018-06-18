@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EssentialsDemo"
+             x:Class="EssentialsDemo.MainPage"
+             Title="Essential Geography">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="More" Order="Secondary" Clicked="OnMoreClicked" />
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <StackLayout Padding="12" Spacing="6">
+
+            <Label Text="Last Location" FontAttributes="Bold" />
+            <Label x:Name="lblSaved" Text="initializing..." />
+
+            <Label Text="Current Coordinates" FontAttributes="Bold" />
+            <Label x:Name="lblCoords" Text="initializing..." />
+
+            <Label Text="Current Location" FontAttributes="Bold" />
+            <Label x:Name="lblLocation" Text="initializing..." />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
